@@ -1,0 +1,29 @@
+{
+    "name": "programic/laravel-dbup",
+    "description": "A simple package to check if the database connection is alive.",
+    "homepage": "https://github.com/programic/laravel-dbup",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Programic",
+            "email": "info@programic.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Programic\\Dbup\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Programic\\Dbup\\DbupServiceProvider"
+            ]
+        }
+    }
+}
